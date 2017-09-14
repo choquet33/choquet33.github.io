@@ -37,7 +37,7 @@
     
     <title>
         
-            Hello World | 
+            关于我 | 
         
         三桃
     </title>
@@ -231,7 +231,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://choquet.cc">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Hello World | 三桃">
+    <meta property="og:title" content="关于我 | 三桃">
     <meta property="og:image" content="http://choquet.cc/img/favicon.png" />
     <meta property="og:description" content="三桃的个人博客">
     
@@ -239,7 +239,7 @@
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="Hello World | 三桃">
+    <meta name="twitter:title" content="关于我 | 三桃">
     <meta name="twitter:description" content="三桃的个人博客">
     <meta name="twitter:image" content="http://choquet.cc/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -289,6 +289,39 @@
 
                     <!-- Post TOC -->
 
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一个"><span class="post-toc-number">1.</span> <span class="post-toc-text">一个</span></a></li></ol>
+    </ul>
+    
+
+
+
 
 <!-- Layouts -->
 
@@ -315,7 +348,7 @@
         
     
             <p class="article-headline-p">
-                Hello World
+                关于我
             </p>
         </div>
 
@@ -365,7 +398,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Hello World&url=http://choquet.cc/about.html&pic=http://choquet.cc/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=关于我&url=http://choquet.cc/about.html&pic=http://choquet.cc/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -374,7 +407,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Hello World&url=http://choquet.cc/about.html&via=choquet" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=关于我&url=http://choquet.cc/about.html&via=choquet" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -416,15 +449,7 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h3 id="一个"><a href="#一个" class="headerlink" title="一个"></a>一个</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">内向型话痨</div><div class="line">洁癖型懒虫</div><div class="line">贫困型财迷</div><div class="line">丑陋型颜控</div><div class="line">自恋型自卑者</div><div class="line">偏执型老好人</div><div class="line">脑内剧场型零经验恋爱达人</div><div class="line">不思进取型共产主义接班人</div></pre></td></tr></table></figure>
 
         
     
